@@ -57,10 +57,18 @@ a.button.is-primary:hover {
   -webkit-user-select: none;
   -ms-user-select: none;
   position: absolute;
+  top:0;
+  left:0;
+}
+
+#content-window {
+  z-index: 999;
 }
 
 #particles-js {
   position: absolute;
   height: 100%;
   width: 100%;
+  top:0;
+  left:0;
 }

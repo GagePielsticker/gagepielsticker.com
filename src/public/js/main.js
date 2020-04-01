@@ -34,7 +34,8 @@ function loadContent (path) {
   currentDir = path
 
   $('#content-window').fadeOut(400, () => {
-    $('#content-window').load(`${window.location.href}${path}`)
-    $('#content-window').fadeIn(400)
+    $('#content-window').load(`${window.location.href}${path}`, () => {
+      $('#content-window').fadeIn(400)
+    })
   })
 }
