@@ -1,0 +1,5 @@
+navy #000080. RGB (84,51,255)
+Full white. #FFFFFF. CMYK 0, 0, 0, 0.
+Greyple. #99AAB5. CMYK 42, 26, 23, 0.
+Dark, but not black. #2C2F33. CMYK 74, 65, 59, 60.
+Not quite black. #23272A. CMYK 75, 66, 61, 67.
