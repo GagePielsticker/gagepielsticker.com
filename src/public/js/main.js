@@ -1,4 +1,40 @@
-console.log('Never going to give you up')
-console.log('Never going to let you down')
-console.log('Never going to run around')
-console.log('and hurt you')
+particlesJS.load('particles-js', 'assets/particle.json', function () {
+  console.log('callback - particles.js config loaded')
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target
+        const $target = document.getElementById(target)
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active')
+        $target.classList.toggle('is-active')
+      })
+    })
+  }
+
+  loadContent('home')
+})
+
+let currentDir = 'home'
+
+function loadContent (path) {
+  $(`#${currentDir}`).removeClass('is-selected')
+  $(`#${path}`).addClass('is-selected')
+
+  currentDir = path
+
+  $('#content-window').fadeOut(400, () => {
+    $('#content-window').load(`${window.location.href}${path}`)
+    $('#content-window').fadeIn(400)
+  })
+}

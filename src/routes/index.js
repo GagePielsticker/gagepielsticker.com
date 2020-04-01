@@ -8,4 +8,8 @@ router.get('/', (req, res, next) => {
   res.render('index')
 })
 
+router.get('/home', (req, res, next) => {
+  res.render('home')
+})
+
 module.exports = router
