@@ -3,11 +3,12 @@
   <%- include('partials/head.ejs') %>
   <body>
 
+    <!-- To anyone reading this im sorry for the sloppy code, its 4am :) -->
     <div id="particles" class="h-100"></div>
     <div id="lander" class="container h-100 d-flex justify-content-center align-items-center">
       <div>
           <h1>Hello, <br>I'm <span class="highlight">Gage</span>, <br>resident computer nerd.</h1>
-          <button type="button" class="btn btn-outline-light">Projects <i class="fas fa-chevron-down"></i></button>
+          <button id="scroll-btn" type="button" class="btn btn-outline-light">About Me <i class="fas fa-chevron-down"></i></button>
           <span id="socials">
             <a href="https://github.com/gagepielsticker"><i class="fab fa-github fa-lg"></i></a>
             <a href="https://keybase.io/rooted"><i class="fab fa-keybase fa-lg"></i></a>
@@ -18,25 +19,25 @@
     </div>
 
     <div id="about">
-      <div class="container">
+      <div class="container" >
         <div id="about-title">
-          <h1 class="display-3 font-weight-normal">About Me</h1>
-          <p class="left-text">I am a 21 year old student currently attending Oklahoma State University for a degree in Computer Science to pursue my passion for software and systems engineering. I actively practice full stack development during my spare time and enjoy being apart of those projects. I'm excited to learn about new innovative methodologies and technologies and can't wait to see what the future holds!</p>
+          <h1 class="display-3 font-weight-normal" data-aos="fade-up">About Me</h1>
+          <p class="left-text" data-aos="fade-up">I am a 21 year old student currently attending Oklahoma State University for a degree in Computer Science to pursue my passion for software and systems engineering. My hobbies include full stack development on fun projects, piano, cars, and being a creator of things. I'm excited to learn about new innovative methodologies and technologies and can't wait to see what the future holds!</p>
         </div>
 
         <div>
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <div class="col-sm center-text">
               <i class="fab fa-node-js fa-5x"></i>
               <p>Three years of designing <b>scalable</b> and <b>maintainable</b> fullstack NodeJS projects for server backends.</p>
             </div>
             <div class="col-sm center-text">
               <i class="fab fa-java fa-5x"></i>
-              <p>Two years of java <b>development</b> and <b>education</b> at Oklahoma State University.</p>
+              <p>Two years of Java <b>development</b> and <b>education</b> at Oklahoma State University.</p>
             </div>
             <div class="col-sm center-text">
               <i class="fas fa-server fa-5x"></i>
-              <p>Three years of designing and maintaing <b>Linux</b> and <b>Windows</b> servers and other various computer systems.</p>
+              <p>Three years of designing and maintaining <b>Linux</b> and <b>Windows</b> servers and other various computer systems.</p>
             </div>
             <div class="col-sm center-text">
               <i class="fas fa-network-wired fa-5x"></i>
@@ -47,10 +48,10 @@
 
         <div>
           <div class="row">
-            <div class="col-sm center-text">
+            <div class="col-sm center-text" data-aos="fade-right">
               <img id="my-picture" src="/images/me.jpg" class="img-fluid" alt="a picture of me">
             </div>
-            <div class="col-sm center-text">
+            <div class="col-sm center-text" data-aos="flip-up">
               <h1 class="display-4">Skills</h1>
               JavaScript
               <div class="progress">
@@ -87,7 +88,7 @@
                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%"></div>
               </div>
               
-              Scalable Design Patterns
+              MongoDB
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%"></div>
               </div>
@@ -109,14 +110,57 @@
     </div>
 
     <div id="projects">
-      <div class="container d-flex">
-        asdf
-      </div>
-    </div>
+      <div class="container">
+        <div id="about-title">
+          <h1 class="display-3 font-weight-normal" data-aos="fade-up">Projects</h1>
+          <p class="center-text" data-aos="fade-up">Here is a collection of my more recent & open source projects!</p>
+        </div>
 
-    <div id="contact">
-      <div class="container d-flex">
-        asdf
+        <div class="row" data-aos="fade-up">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Scalable Discord Bot Framework</h5>
+                <p class="card-text">A REST + Integration designed discord bot application for servers allowing for theoretical easy and infinite scaling to power and usage needs.</p>
+                <a href="https://github.com/GagePielsticker/Scalable-Discord-Bot-Framework" class="btn btn-primary">Github <i class="fas fa-lock-open"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Node Web Application Base</h5>
+                <p class="card-text">I wrote this pseudo boilerplate to help fellow developers that were trying to figure out how to implament passport into an express application.</p>
+                <a href="https://github.com/GagePielsticker/Node-Web-Application-Base" class="btn btn-primary">Github <i class="fas fa-lock-open"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">GalaxySim</h5>
+                <p class="card-text">A randomly generated text based MMO inspired by old terminal games. Currently with 700 active registered players and over 550 tracked communities.</p>
+                <a href="https://github.com/GagePielsticker/Galaxysim" class="btn btn-primary">Github <i class="fas fa-lock"></i></a>
+                <a href="https://github.com/GagePielsticker/Galaxysim" class="btn btn-primary">Discord <i class="fab fa-discord"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">GagePielsticker.com</h5>
+                <p class="card-text">The entire website + backend code (albeit small) is available on github and free to use per the MIT license.</p>
+                <a href="https://discord.gg/8PmWZKb" class="btn btn-primary">Github <i class="fas fa-lock-open"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
       </div>
     </div>
 
@@ -125,5 +169,17 @@
 
     <script src="/javascripts/particles.js"></script>
     <script src="/javascripts/particlehandler.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      $('#scroll-btn').click(() => {
+        $('html,body').animate(
+          { scrollTop: $('#about').offset().top },
+          'slow'
+        )
+      })
+
+      AOS.init()
+    </script>
   </body>
 </html>
