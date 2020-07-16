@@ -1,0 +1,86 @@
+html, body {
+  background-color: #252934;
+  height: 100%;
+  width: 100%;
+}
+
+body div {
+  background-color: transparent;
+  color: #252934;
+}
+
+#navbar-wrapper {
+  background-color: #2C2F33;
+}
+
+#about {
+  background-color: #fff;
+  z-index: 2;
+  padding-bottom: 10px;
+}
+
+#about .container {
+  color: #2C2F33;
+}
+
+#about-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.highlight {
+  color: #00ffcc;
+}
+
+#lander div {
+  z-index: 2 !important;
+  color: #fff;
+}
+
+#lander div button {
+  width: 200px;
+  height: 50px;
+}
+
+#my-picture {
+  width: 350px;
+  height: auto;
+  box-shadow: -5px 5px 6px #000000;
+  border-radius: 70px;
+}
+
+footer h5, footer p, footer div {
+  color: #fff !important;
+}
+
+#socials a {
+  margin-left: 10px;
+}
+
+.col-sm p {
+  margin-top: 20px;
+}
+
+#particles {
+  position: absolute;
+  display: block;
+  z-index: 1 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+a:hover, a:visited, a:link, a:active, a
+{
+    color: white;
+    text-decoration: none !important;
+}

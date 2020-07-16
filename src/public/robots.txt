@@ -1,2 +1,0 @@
-User-agent: *
-Disallow: /very_sneaky_of_you_to_look_here_mr/
