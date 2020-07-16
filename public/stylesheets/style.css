@@ -77,6 +77,13 @@ footer h5, footer p, footer div {
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  #socials {
+    margin-top: 10px;
+    display :block;
+  }
+}
+
 .col-sm p {
   margin-top: 20px;
 }
