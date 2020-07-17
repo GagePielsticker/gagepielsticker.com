@@ -73,6 +73,12 @@ footer h5, footer p, footer div {
   color: #fff !important;
 }
 
+#timeline {
+  width: 700px;
+  height: auto;
+  margin-top: 40px;
+}
+
 #socials a {
   margin-left: 10px;
 }
