@@ -88,6 +88,10 @@ footer h5, footer p, footer div {
     margin-top: 10px;
     display :block;
   }
+
+  #timeline {
+    margin-top: 40px;
+  }
 }
 
 .col-sm p {
