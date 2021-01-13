@@ -9,6 +9,13 @@ body div {
   color: #252934;
 }
 
+
+.col-sm-4, .col-sm-6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 #navbar-wrapper {
   background-color: #2C2F33;
 }
@@ -28,11 +35,6 @@ body div {
   background-color: rgb(240, 240, 240);
   padding-bottom: 25px;
 }
-
-.row .col-sm-6 {
-  padding-top: 10px;
-}
-
 
 #about-title {
   width: 100%;
